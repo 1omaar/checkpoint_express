@@ -1,0 +1,112 @@
+* { 
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(Yellow-Abstract-Wallpapers-032.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.title-design{
+color: rgb(255, 218, 6);
+text-shadow: rgb(255, 255, 255) 1px 0 10px;
+margin-left: 1%;
+}
+nav{
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(65, 65, 65);
+
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    padding: 1% 0;
+}
+li{
+    list-style-type: none;
+    
+}
+h4{
+    color: white;
+}
+a:hover {
+    color: rgb(255, 218, 6);
+}
+a:active{
+    color: goldenrod;
+}
+a:visited{
+    color: goldenrod;
+}
+a {
+    color: rgb(65, 65, 65);
+}
+.title-section{
+    text-align: center;
+    color: rgb(27, 26, 26);
+    margin: 3% 0;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.play_design{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(65, 65, 65) ;
+    border-radius: 5%;
+    padding: 2% 1%;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+h3 {
+    color: ghostwhite;
+    margin-bottom: 4%;
+}
+img{
+   
+    width: 40%;
+    margin-bottom: 4%;
+}
+.section-services{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.para-services{
+    margin-bottom: 3%;
+}
+h2{
+    margin-bottom: 2%;
+}
+.footer-home{
+    background-color: black;
+    margin-top: 4.05%;
+}
+.text-footer{
+    color: white;
+    font-size: 67%;
+}
+.footer-services{
+    background-color: black;
+    margin-top: 12.15%;
+}
+.para-contact {
+    text-align: center;
+    margin-top: 3%;
+}
+.footer-contact{
+    background-color: black;
+    margin-top: 32.1%;
+}
