@@ -3,28 +3,31 @@ console.log("checkpoint express")
 const express=require("express");
 // init express
 const app=express();
+let date = new Date();
+function requesteDay(req,res,next){
+    req.requesteDay=date.getDay();
+    if(req.requesteDay>=1&&req.requesteDay<=6){
+        next();
+    }else{res.status(500).send('<h1 style="text-align:center;">Out Service</h1>')}
+};
+  function requestTime(req,res,next){
+ req.requestTime=date.getHours();
+ if(req.requestTime >=9&&req.requestTime<=17){
+    next();
+ }else{res.status(500).send('<h1 style="text-align:center;">Out Service</h1>')}
+};
+
 app.use(express.json());
 // serve the state file
 
+app.use(requesteDay,requestTime,express.static('public'));
 
 
 
-  const dis= app.use(express.static('public'));
-let date = new Date();
-let day= date.getDay()
-let time=date.getHours()
-console.log(day)
-console.log(time)
 
 
-function Errorhandler(err, req, res, next) {
-    if ((day===7 )&& (time!==9||time!==10||time!==11||time!==12||time!==13||time!==14||time!==15||time!==16||time!==17)){
-        console.log("hello");
-    }else {
-       next();   
-}
-}
-app.get("/" ,Errorhandler,dis)
+
+
 
 // run server
 const port=5000;
